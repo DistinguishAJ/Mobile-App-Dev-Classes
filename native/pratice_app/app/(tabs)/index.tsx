@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {ScrollView, StyleSheet, View, Text, Switch } from 'react-native';
+import {ScrollView, StyleSheet, View, Text, Switch, Image } from 'react-native';
 
 export default function HomeScreen() {
   const [isEnabled,  setIsEnabled] = useState(true);
@@ -27,6 +27,10 @@ export default function HomeScreen() {
     </View>
     <View>
       <Text>Welcome To TechCrush</Text>
+      <Image
+      source={require("@/assets/images/flower.png")}
+      style={{width: 100, height: 100, alignSelf: "center"}}
+      />
     </View>
 
     <button>Click Me</button>
